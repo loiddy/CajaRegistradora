@@ -1,27 +1,31 @@
 # CajaRegistradora
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Una caja registradora para un restaurante, con sección  de bebida, entrante, comida, postre y una comanda para calcular el precio total.
 
-## Development server
+Se ha hecho con **javacsript, typesciprt y jquery con angular 7**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Visualización
 
-## Code scaffolding
+Puede ver la web montada en https://cajaregistradora-df543.firebaseapp.com/ el servidor es de firebase. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+Para instalar esta app, ejecute los siguientes comandos en una terminal
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    git clone https://github.com/loiddy/CajaRegistradora.git
+    cd CajaRegistradora
+    npm install
 
-## Running unit tests
+Esto le instalará la app y las dependencias que esta necesita.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Y ya esta :)
 
-## Running end-to-end tests
+## ¿Cómo arrancarla en development?
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Después de la instalación, puede comenzar la en development mode con los siguientes comandos.
 
-## Further help
+    cd CajaRegistradora
+    ng serve -o
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+La app se abrirá automáticamente en su navegador en 
+http://localhost:4200/.
