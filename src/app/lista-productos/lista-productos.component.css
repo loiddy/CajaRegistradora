@@ -1,0 +1,22 @@
+div.overflow {
+  overflow: scroll;
+}
+
+div.item {
+  flex-basis: 100px;
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+img:hover {
+  cursor: pointer;
+}

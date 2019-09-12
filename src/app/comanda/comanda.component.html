@@ -1,0 +1,46 @@
+<div class="bg-white h-100 rounded text-left p-2">
+
+  <div class="d-flex flex-column h-100 justify-content-between">
+
+    <div class="d-flex flex-column h-100 justify-content-start overflow">
+
+      <p *ngIf="finales.length == 0" class="pt-1 pb-2">Seleccione un producto</p>
+
+      <div *ngFor="let f of finales" class="d-flex justify-content-between pb-2">
+
+        <div class="d-flex justify-content-between flex-nowrap">
+
+          <button type="button" class="d-inline-block p-0 mr-2" (click)=handleClick(f)>
+
+            <i class="fas fa-times"></i>
+
+          </button>
+
+          <p class="pt-1">{{f.nombre}}</p>
+
+        </div>
+
+        <p class="d-inline-block pl-4 pt-1">{{f.precio | currency :'EUR'}}</p>
+
+      </div>
+
+    </div>
+
+
+    <div>
+      <hr class="mx-2 mt-1">
+
+      <div class="d-flex justify-content-between">
+
+        <h6>TOTAL</h6>
+
+        <h6>{{sumar()  | currency :'EUR'}}</h6>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>

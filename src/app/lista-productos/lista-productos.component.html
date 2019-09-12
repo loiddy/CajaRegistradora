@@ -1,0 +1,7 @@
+<div class="d-flex flex-wrap bg-white rounded p-2 justify-content-center overflow">
+
+  <div class="item rounded p-0 m-1" *ngFor="let producto of productos">
+    <img [src]="producto.imagen" alt="imagen de producto" class="img-fluid" (click)="handleClick(producto)">
+  </div>
+
+</div>
